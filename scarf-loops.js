@@ -21,22 +21,22 @@ var ombreInfinity = {
   description: "A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic."
 };
 
-fringedPlaid = {
+var fringedPlaid = {
   price: 18.99,
   description: "Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic."
 };
 
-multiColor = {
+var multiColor = {
   price: 22.99,
   description: "The Who What Wear Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic"
 };
 
-etroPaisleyPrintSilk = {
+var etroPaisleyPrintSilk = {
   price: 249.99,
   description:"Luxurious silk scarf with subtle paisley pattern. 100% silk"
 };
 
-ashbyTwill = {
+var ashbyTwill = {
   price: 70.99,
   description: "Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool"
 };
