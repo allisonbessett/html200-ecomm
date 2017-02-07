@@ -18,7 +18,7 @@ var products = [
     "imageTitle": "northern-lights.jpg"
   },
   {
-    "name": "Ombre Infinity",
+    "name": "ombre Infinity",
     "price": 11.99,
     "description": "A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.",
     "imageTitle": "ombre-infinity.jpg"
@@ -47,4 +47,12 @@ var products = [
     "description": "Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool",
     "imageTitle": "twill.jpg"
   }
-]
+];
+
+//for (var i = 0; i<products.length; i++) {
+//  for (var p in products[i]) {
+//    if (products[i].hasOwnProperty(p)) {
+//      console.log(p + ":" + products[i][p] + "\n"); 
+//    };
+//  };
+//};
