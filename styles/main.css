@@ -4,6 +4,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
+  padding-top:2rem;
 }
 
 .container {
@@ -45,13 +46,30 @@ header {
 
 img {
   width: 15em;
-  height: 20rem
+  height: 20rem 
 }
 
 nav, h4, h5, p {
   font-family: 'Questrial', sans-serif;
 }
 
-/ {
-  font-size: 0.8rem;
+.col-centered {
+  text-align: center;
 }
+
+.col-centered {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
