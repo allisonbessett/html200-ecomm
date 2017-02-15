@@ -1,7 +1,14 @@
-. {
-  margin: auto;
+
+.item-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
+.container {
+  margin: auto;
+}
 nav {
   text-align: center;
   width: 100%;
@@ -14,12 +21,37 @@ nav li {
 
 nav ul {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
   list-style-type: none;
-  padding: 1rem 2rem 0.7rem 2rem;
+  padding: 0.5rem 2rem 0.7rem 2rem;
+  justify-content: space-around;
 }
 
 a {
   text-decoration: none;
   color: darkcyan;
+}
+
+h1 {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Questrial', sans-serif;
+}
+
+header {
+  padding: 1rem;
+}
+
+img {
+  width: 15em;
+  height: 20rem
+}
+
+nav, h4, h5, p {
+  font-family: 'Questrial', sans-serif;
+}
+
+/ {
+  font-size: 0.8rem;
 }
