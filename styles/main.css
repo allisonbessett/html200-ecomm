@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   align-content: flex-start;
   padding-top:2rem;
+  padding-bottom: 2rem;
 }
 
 .container {
@@ -30,7 +31,7 @@ nav ul {
 
 a {
   text-decoration: none;
-  color: darkcyan;
+  color: #181831;
 }
 
 h1 {
@@ -38,11 +39,13 @@ h1 {
   text-align: center;
   font-size: 2rem;
   font-family: 'Questrial', sans-serif;
+  color: #181831;
 }
 
 header {
   padding: 1rem;
 }
+
 
 img {
   width: 15em;
@@ -51,13 +54,18 @@ img {
 
 nav, h4, h5, p {
   font-family: 'Questrial', sans-serif;
+  color: #181831;
+}
+
+h2 {
+  font-family: 'Questrial', sans-serif;
+  color: #181831;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .col-centered {
   text-align: center;
-}
-
-.col-centered {
   margin-left: auto;
   margin-right: auto;
   display: block;

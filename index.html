@@ -47,6 +47,10 @@
 
         <input type="submit" value="Sort">
       </form>
+      <form name="filter" onsubmit="capture();">
+        <input type="text" name="name" placeholder="Questions or comments?">
+        <input type="submit" value="Submit">
+      </form>
     </aside>
 
     <section>
@@ -108,7 +112,7 @@
         </div>
           </div>
         
-          <div class="col-sm-4 col-md-4 col-lg-3 col-centered">
+          <div class="col-sm-12 col-md-4 col-lg-3 col-centered">
         <div class="item">
           <h4>Etro Paisley Print Silk</h4>
           <h5>$249.99</h5>
@@ -117,7 +121,7 @@
         </div>
           </div>
         
-          <div class="col-sm-4 col-md-4 col-lg-3 col-centered">
+          <div class="col-sm-12 col-md-4 col-lg-3 col-centered">
         <div class="item">
           <h4>Ashby Twill</h4>
           <h5>$70.99</h5>
@@ -128,6 +132,8 @@
           </div>
         </div>
     </section>
+    
+    <script type="text/javascript" src="js/form-handler.js"></script>
 
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

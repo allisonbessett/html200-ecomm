@@ -1,4 +1,4 @@
 function capture(){
-  console.log(document.cusInfo.name.value);
+  console.log(document.filter.name.value);
   event.preventDefault;
 }
