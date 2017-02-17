@@ -54,6 +54,7 @@
       <h2>Scarves</h2>
 
       <div class="item-container">
+        <div class="photo-container">
         
         
 <!--
@@ -78,22 +79,27 @@
       
         <div class="row">
         <div class="col-sm-12 col-md-4 col-lg-3 col-centered">
-          <div class="photo-container">
+          
           <div class="item">
           <h4>Reversible Plaid</h4>
           <h5>$26.99</h5>
-               <img src="images/reversible-plaid.jpg" alt="Plaid Scarf"/>
+            <div class="photo-frame">
+               <img srcset="images/reversible-plaid100.jpg 100w, images/reversible-plaid200.jpg 200w, images/reversible-plaid300.jpg 300w" 
+                  sizes="(max-width: 600px) 100px, (max-width: 1600px) 200px, (min-width: 1601px) 300px"
+                  src="images/reversible-plaid.jpg" alt="Plaid Scarf"/>
+              </div>
           <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
         </div>
-          </div>
-          </div>
-        
-        
+            </div>
+          
         <div class="col-sm-12 col-md-4 col-lg-3 col-centered">
         <div class="item">
+          
           <h4>Wool Cable Knit</h4>
           <h5>$49.99</h5>
+          <div class="photo-frame">
           <img src="images/wool-cable.jpeg" alt="Wool Sweater"/>
+            </div>
           <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
         </div>
           </div>
@@ -155,7 +161,9 @@
           <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool</p>
         </div>
           </div>
-        </div>
+      </div>
+        
+      </div>
         </div>
     </section>
     
