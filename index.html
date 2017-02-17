@@ -36,7 +36,7 @@
     </header>
 
     <aside>
-      <form>
+      <form name="filter" onsubmit="capture();">
         <label>Filter By:
           <select name="filter">
             <option value="">Choose One</option>
@@ -45,10 +45,7 @@
           </select>
         </label>
         <input type="submit" value="Sort">
-      </form>
-      
-      <form name="filter" 
-      onsubmit="capture();">
+     
         <input type="text" name="name">
         <input type="submit" value="Submit">
       </form>
