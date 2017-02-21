@@ -1,21 +1,21 @@
+.container-fluid {
+  margin: auto;
+  width: 100%;
+  
+}
 
 .item-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   padding-top:2rem;
   padding-bottom: 2rem;
+  width: 100%;
 }
 
-.container {
-  margin: auto;
-}
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 nav {
   text-align: center;
   width: 100%;
@@ -51,28 +51,43 @@ header {
   padding: 1rem;
 }
 
+img {
+  max-width: 100%;
+  padding: 1rem;
+  display: inline-block;
+}
 
-
-nav, h4, h5, p {
+nav, h4 {
   font-family: 'Questrial', sans-serif;
   color: #181831;
+  padding-bottom: 1rem;
+  margin: auto;
 }
 
 h2 {
   font-family: 'Questrial', sans-serif;
   color: #181831;
+  padding-top: 2rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .item {
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  margin: auto;
+  display: grid;
   padding: 2rem;
+  width: 100%;
 }
 
+p, h5 {
+  font-family: 'Questrial', sans-serif;
+  color: #181831;
+  font-size: 0.8rem;
+  display: inherit;
+}
 
 
 
