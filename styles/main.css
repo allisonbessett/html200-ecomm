@@ -11,6 +11,11 @@
 .container {
   margin: auto;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
 nav {
   text-align: center;
   width: 100%;
@@ -47,10 +52,6 @@ header {
 }
 
 
-/*img {
-  width: 15em;
-  height: 20rem 
-}*/
 
 nav, h4, h5, p {
   font-family: 'Questrial', sans-serif;
@@ -64,11 +65,12 @@ h2 {
   font-size: 1.2rem;
 }
 
-.col-centered {
+.item {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  padding: 2rem;
 }
 
 
