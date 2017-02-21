@@ -49,6 +49,25 @@ var products = [
   }
 ];
 
+//TODO: trigger on change of cart contents
+function sumPrices(cartArray) {
+  // for loop through array, sum value of price attribute for each object
+  
+  var total = 0;
+  for(var i=0; i<cartArray.length; i++){
+    
+    if(cartArray[i].price) {
+      total = total+cartArray[i].price;
+    }
+  }
+  //TODO: print total as HTML to page next to cart icon
+  console.log(total);
+}
+
+
+
+
+
 //for (var i = 0; i<products.length; i++) {
 //  for (var p in products[i]) {
 //    if (products[i].hasOwnProperty(p)) {
