@@ -85,7 +85,7 @@ img {
   max-width: 100%;
 }
 
-nav, h4 {
+nav, h4, h6 {
   font-family: 'Questrial', sans-serif;
   color: #06203A;
   padding-bottom: 1rem;
@@ -100,14 +100,16 @@ h2 {
   font-size: 1.6rem;
 }
 
-figcaption, h5 {
+figcaption, h5, p {
   font-family: 'Questrial', sans-serif;
   color: #06203A;
   font-size: 0.8rem;
 }
 
 footer {
+  padding: 2rem;
   background-image: url("../images/snow-header.jpg");
+  background-size: cover;
 }
 
 
