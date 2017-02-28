@@ -57,6 +57,12 @@ aside {
   }
 }
 
+@media screen and (max-width:550px) {
+  .item {
+    
+  }
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -110,7 +116,6 @@ header {
 img {
   max-width: 100%;
   padding-top: 1rem;
-  padding-bottom: 3rem;
   margin: auto;
 }
 
@@ -172,7 +177,7 @@ p {
   font-family: 'Questrial', sans-serif;
   color: #06203A;
   font-size: 1.2rem;
-  padding: 2rem;
+  padding: 1rem;
   letter-spacing: 0.04rem;
   text-align: center; 
   
@@ -196,6 +201,7 @@ p {
   p {
     width: 100%; 
     font-size: 1.2rem;
+    padding-top: 4rem;
   }
 
 .photo-frame {
