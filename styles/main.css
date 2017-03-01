@@ -41,7 +41,7 @@ aside {
   display: inline-block;
   text-align: center;
   margin: auto;
-  padding: 2rem, 1rem; 
+  padding: 2rem 1rem; 
   width: 90%;
   height: 100%;
   border: 5px double black;
@@ -54,12 +54,6 @@ aside {
     flex-direction: row;
     width: 100%;
     margin: auto; 
-  }
-}
-
-@media screen and (max-width:550px) {
-  .item {
-    
   }
 }
 
@@ -218,7 +212,7 @@ footer {
   font-size: 1.2rem;
 /*  border-top: 5px double white;*/
 }
-  
+
  
 
 
