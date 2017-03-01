@@ -209,10 +209,6 @@ p {
   padding-bottom: 3rem;
 }
 
-li {
-  list-style: none;
-}
-
 footer {    
   position: sticky;
   padding: 1rem;
@@ -220,13 +216,13 @@ footer {
   letter-spacing: 0.1rem;
   color: #051847;
   font-size: 1.2rem;
-  border-top: 5px double white;
+/*  border-top: 5px double white;*/
 }
+  
+ 
 
-.footer-h6 {
-  font-size: 1.6rem;
-}
 
+  
 
 
 
