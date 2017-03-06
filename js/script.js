@@ -18,7 +18,7 @@ var products = [
     "imageTitle": "northern-lights.jpg"
   },
   {
-    "name": "ombre Infinity",
+    "name": "Ombre Infinity",
     "price": 11.99,
     "description": "A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.",
     "imageTitle": "ombre-infinity.jpg"
@@ -50,28 +50,64 @@ var products = [
 ];
 
 //TODO: trigger on change of cart contents
-function sumPrices(cartArray) {
+//object.onclick = function sumPrices(cartArray) {
   // for loop through array, sum value of price attribute for each object
+
+// if i >= 0
+//splice to get it out of the array
+// else if index < 0, not in array, (else) so push into array
+//
+
+
+//function removeAnswer() {
+//  var remove = document.removalForm.remove.value;
+//  var index = fortunes.indexOf(remove);
+//  
+//  if(index >= 0) {
+//    fortunes.splice(index, 1)
+//  }
+//  console.log(fortunes);
+//  event.preventDefault();
   
+var cartArray;
+function sumPrices() {
   var total = 0;
-  for(var i=0; i<cartArray.length; i++){
-    
-    if(cartArray[i].price) {
+  //cartArray.push(whatever)
+  var test = this.getAttribute('value');
+  console.log(test);
+  var addTo = document.addButton.push.value;
+  var index = sumPrices.indexOf(push);
+  cartArray.push(addTo);
+  for (var index=0; i<cartArray.length; i++){
+    if (cartArray[i].price >= 0) {
       total = total+cartArray[i].price;
+      console.log(cartArray.length);
     }
   }
+  
+  console.log(sumPrices);
+  event.preventDefault();
   //TODO: print total as HTML to page next to cart icon
+  //document.labelname.
   console.log(total);
 }
 
 
 
+var names = ["Reversible Plaid", "Wool Cable Knit", "Northern Lights", "Ombre Infinity", "Fringed Plaid", "Multi Color", "Etro Paisley-Print Silk", "Ashby Twill"];
+names.sort();
+
+var prices = [26.99, 49.99, 29.99, 11.99, 18.99, 22.99, 249.99, 70.99];
+function comparePrices(a, b) {
+  return a - b;
+}
+prices.sort(comparePrices);
 
 
-//for (var i = 0; i<products.length; i++) {
-//  for (var p in products[i]) {
-//    if (products[i].hasOwnProperty(p)) {
-//      console.log(p + ":" + products[i][p] + "\n"); 
-//    };
-//  };
-//};
+
+
+
+
+
+
+
