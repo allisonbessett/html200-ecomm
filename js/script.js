@@ -70,7 +70,7 @@ var products = [
 //  event.preventDefault();
   
 //var cartArray[];
-//function addButton() {
+//function addButton() 
 //  var total = 0;
 //  //cartArray.push(whatever)
 //  var test = this.getAttribute('value');
@@ -78,7 +78,7 @@ var products = [
 //  var addTo = document.addButton.push.value;
 //  var index = sumPrices.indexOf(push);
 //  cartArray.push(addTo);
-//  for (var index=0; i<cartArray.length; i++){
+//  for (var i=0; i<cartArray.length; i++){
 //    if (cartArray[i].price >= 0) {
 //      total = total+cartArray[i].price;
 //      console.log(cartArray.length);
@@ -92,11 +92,25 @@ var products = [
 //  console.log(total);
 //}
 
-function addButton("scarf"){
-  console.log(scarf);
+var cartArray[];
+var cartTotal = 0;
+function addButton(scarf){
+ for (i = 0; i <= products.length; i++) {
+   if (products[i].name = scarf) {
+     cartArray.push;
+     cartTotal += products[i].price;
+   }
+ }
 }
 
 
+//fuction addButton(p1) {
+//	for (var i = 0; i<products.length; i++){
+//		if (products[i].name = p1) {
+//			cartTotal += products[i].price;
+//		}
+//	}
+//}
 
 var names = ["Reversible Plaid", "Wool Cable Knit", "Northern Lights", "Ombre Infinity", "Fringed Plaid", "Multi Color", "Etro Paisley-Print Silk", "Ashby Twill"];
 names.sort();
