@@ -69,30 +69,32 @@ var products = [
 //  console.log(fortunes);
 //  event.preventDefault();
   
-var cartArray;
-function sumPrices() {
-  var total = 0;
-  //cartArray.push(whatever)
-  var test = this.getAttribute('value');
-  console.log(test);
-  var addTo = document.addButton.push.value;
-  var index = sumPrices.indexOf(push);
-  cartArray.push(addTo);
-  for (var index=0; i<cartArray.length; i++){
-    if (cartArray[i].price >= 0) {
-      total = total+cartArray[i].price;
-      console.log(cartArray.length);
-    }
-  }
-  
-  console.log(sumPrices);
-  event.preventDefault();
-  //TODO: print total as HTML to page next to cart icon
-  //document.labelname.
-  console.log(total);
+//var cartArray[];
+//function addButton() {
+//  var total = 0;
+//  //cartArray.push(whatever)
+//  var test = this.getAttribute('value');
+//  console.log(test);
+//  var addTo = document.addButton.push.value;
+//  var index = sumPrices.indexOf(push);
+//  cartArray.push(addTo);
+//  for (var index=0; i<cartArray.length; i++){
+//    if (cartArray[i].price >= 0) {
+//      total = total+cartArray[i].price;
+//      console.log(cartArray.length);
+//    }
+//  }
+//  
+//  console.log(sumPrices);
+//  event.preventDefault();
+//  //TODO: print total as HTML to page next to cart icon
+//  //document.labelname.
+//  console.log(total);
+//}
+
+function addButton(){
+  console.log("add button clicked");
 }
-
-
 
 var names = ["Reversible Plaid", "Wool Cable Knit", "Northern Lights", "Ombre Infinity", "Fringed Plaid", "Multi Color", "Etro Paisley-Print Silk", "Ashby Twill"];
 names.sort();
