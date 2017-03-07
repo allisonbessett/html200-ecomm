@@ -92,9 +92,11 @@ var products = [
 //  console.log(total);
 //}
 
-function addButton(){
-  console.log("add button clicked");
+function addButton("scarf"){
+  console.log(scarf);
 }
+
+
 
 var names = ["Reversible Plaid", "Wool Cable Knit", "Northern Lights", "Ombre Infinity", "Fringed Plaid", "Multi Color", "Etro Paisley-Print Silk", "Ashby Twill"];
 names.sort();
