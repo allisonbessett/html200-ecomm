@@ -49,67 +49,21 @@ var products = [
   }
 ];
 
-//TODO: trigger on change of cart contents
-//object.onclick = function sumPrices(cartArray) {
-  // for loop through array, sum value of price attribute for each object
-
-// if i >= 0
-//splice to get it out of the array
-// else if index < 0, not in array, (else) so push into array
-//
-
-
-//function removeAnswer() {
-//  var remove = document.removalForm.remove.value;
-//  var index = fortunes.indexOf(remove);
-//  
-//  if(index >= 0) {
-//    fortunes.splice(index, 1)
-//  }
-//  console.log(fortunes);
-//  event.preventDefault();
-  
-//var cartArray[];
-//function addButton() 
-//  var total = 0;
-//
-//  var test = this.getAttribute('value');
-//  console.log(test);
-//  var addTo = document.addButton.push.value;
-//  var index = sumPrices.indexOf(push);
-//  cartArray.push(addTo);
-//  for (var i=0; i<cartArray.length; i++){
-//    if (cartArray[i].price >= 0) {
-//      total = total+cartArray[i].price;
-//      console.log(cartArray.length);
-//    }
-//  }
-//  
-//  console.log(sumPrices);
-//  event.preventDefault();
-//  //TODO: print total as HTML to page next to cart icon
-//  //document.labelname.
-//  console.log(total);
-//}
-
-//My global cartArray variable doesn't update in the addButton function. 
-//When I click add to cart button, it doesn't update the cartArray when I view it in the console. It only shows one item on each click. 
-
 var cartArray;
 cartArray = [];
 
 function addButton(scarfName){
- for (i = 0; i < products.length; i++) {
+ for (var i = 0; i < products.length; i++) {
    if (products[i].name == scarfName) {
     cartArray.push(products[i]);
-     console.log(cartArray[0].name + " is in the cart");
+     console.log(cartArray[i].name + " is in the cart");
    }
  } 
   console.log(cartArray.length);
 }
 
 function removeButton(scarfName) {
-  for (i = 0; i < cartArray.length; i++) {
+  for (var i = 0; i < cartArray.length; i++) {
    if (cartArray[i].name == scarfName) {
     cartArray.splice(i, 1);
       console.log(cartArray.length);
@@ -125,22 +79,6 @@ function sumPrices() {
   console.log(total);
 }
 
-//fuction addButton(p1) {
-//	for (var i = 0; i<products.length; i++){
-//		if (products[i].name = p1) {
-//			cartTotal += products[i].price;
-//		}
-//	}
-//}
-
-var names = ["Reversible Plaid", "Wool Cable Knit", "Northern Lights", "Ombre Infinity", "Fringed Plaid", "Multi Color", "Etro Paisley-Print Silk", "Ashby Twill"];
-names.sort();
-
-var prices = [26.99, 49.99, 29.99, 11.99, 18.99, 22.99, 249.99, 70.99];
-function comparePrices(a, b) {
-  return a - b;
-}
-prices.sort(comparePrices);
 
 
 
