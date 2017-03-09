@@ -72,7 +72,7 @@ var products = [
 //var cartArray[];
 //function addButton() 
 //  var total = 0;
-//  //cartArray.push(whatever)
+//
 //  var test = this.getAttribute('value');
 //  console.log(test);
 //  var addTo = document.addButton.push.value;
@@ -92,17 +92,38 @@ var products = [
 //  console.log(total);
 //}
 
-var cartArray[];
-var cartTotal = 0;
-function addButton(scarf){
- for (i = 0; i <= products.length; i++) {
-   if (products[i].name = scarf) {
-     cartArray.push;
-     cartTotal += products[i].price;
+//My global cartArray variable doesn't update in the addButton function. 
+//When I click add to cart button, it doesn't update the cartArray when I view it in the console. It only shows one item on each click. 
+
+var cartArray;
+cartArray = [];
+
+function addButton(scarfName){
+ for (i = 0; i < products.length; i++) {
+   if (products[i].name == scarfName) {
+    cartArray.push(products[i]);
+     console.log(cartArray[0].name + " is in the cart");
    }
- }
+ } 
+  console.log(cartArray.length);
 }
 
+function removeButton(scarfName) {
+  for (i = 0; i < cartArray.length; i++) {
+   if (cartArray[i].name == scarfName) {
+    cartArray.splice(i, 1);
+      console.log(cartArray.length);
+     return;
+   }
+ } 
+}
+var total = 0;
+function sumPrices() {
+  for (i = 0; i < cartArray.length; i++) {
+   total = total+cartArray[i].price;
+  }
+  console.log(total);
+}
 
 //fuction addButton(p1) {
 //	for (var i = 0; i<products.length; i++){

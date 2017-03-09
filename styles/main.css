@@ -1,8 +1,10 @@
 .container-fluid {
   margin: auto;
   background-color: #C3C3C6;
-   background-image: url("../images/snow-header.jpg");
+/*
+  background-image: url("../images/snow-header.jpg");
   background-size: cover;
+*/
 }
 
 aside {
