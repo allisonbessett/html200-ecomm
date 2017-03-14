@@ -30,8 +30,8 @@
           <li><a href="#">Gloves</a></li>
           <li><a href="#">Scarves</a></li>
           <li class="cart-info">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <label name="cartLabel">0</label>
+            <i class="fa fa-shopping-cart" id="cartIcon" aria-hidden="true"></i>
+            <span id="cartAmount"></span>
           </li>
         </ul>
       </nav>
@@ -247,12 +247,12 @@
             <div class="photo-frame">
             <img srcset="images/twill100.jpg 150w, images/twill200.jpg 300w, images/twill300.jpg 400w"
               sizes="(max-width: 400px) 150px, (max-width: 1200px) 300px, (min-width: 1601px) 400px"
-            src="images/etro.jpg" alt="Paisley silk scarf" src="images/twill.jpg" alt="Twill Scarf"/>
+             src="images/twill.jpg" alt="Twill Scarf"/>
             </div>
             <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool</p>
           <h5>$70.99</h5>
           <div>
-              <form onclick="addButton('Ashby Twill')" name="addToCart">
+              <form onclick="addButton('Ashby Twill')">
                 <label>
                   <input type="submit" value="Add to Cart">
                 </label>

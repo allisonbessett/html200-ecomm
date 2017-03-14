@@ -49,22 +49,22 @@ var products = [
   }
 ];
 
-var cartArray;
-cartArray = [];
-
 function addButton(scarfName){
+  var cartArray = getCart();
  for (var i = 0; i < products.length; i++) {
    if (products[i].name == scarfName) {
     cartArray.push(products[i]);
-     console.log(cartArray[i].name + " is in the cart");
+     setCart(cartArray);
+     console.log(cartArray[cartArray.length - 1].name + " is in the cart");
    }
  } 
   console.log(cartArray.length);
 }
 
 function removeButton(scarfName) {
+  var cartArray = getCart();
   for (var i = 0; i < cartArray.length; i++) {
-   if (cartArray[i].name == scarfName) {
+    if (cartArray[i].name == scarfName) {
     cartArray.splice(i, 1);
       console.log(cartArray.length);
      return;
@@ -73,13 +73,37 @@ function removeButton(scarfName) {
 }
 var total = 0;
 function sumPrices() {
+  var cartArray = getCart();
   for (i = 0; i < cartArray.length; i++) {
-   total = total+cartArray[i].price;
+  total = total+cartArray[i].price;
   }
   console.log(total);
 }
 
+function setCart(cartArray) {
+  localStorage.setItem("cartArray", JSON.stringify(cartArray));
+}
 
+function getCart() {
+  var cartArray = JSON.parse(localStorage.getItem("cartArray"));
+  if (cartArray == null) {
+    return new Array();
+  } else {
+    return cartArray;
+  }
+}
+
+
+window.onload = function() {
+  var cartAmount= document.getElementById("cartAmount");
+  var cartArray = getCart();
+  console.log("window.onload");
+    if (cartArray.length >= 1) {
+      cartAmount.innerHTML = cartArray.length.toString();
+    } else {
+      cartAmount.innerHTML = "0";
+    }
+}
 
 
 
