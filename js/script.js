@@ -66,8 +66,9 @@ function removeButton(scarfName) {
   for (var i = 0; i < cartArray.length; i++) {
     if (cartArray[i].name == scarfName) {
     cartArray.splice(i, 1);
-      console.log(cartArray.length);
-     return;
+      setCart(cartArray);
+      console.log(cartArray[cartArray.length - 1].name + " was removed from the cart");
+//     return;
    }
  } 
 }
